@@ -20,17 +20,53 @@
     <nav class="navbar">
         <div class="navbar-container">
             <div class="logo">
-                <image src="main-lg.jpg" alt="main-logo">
+                <a href="#">
+                    <image src="./images/main-lg.jpg" alt="main" class="logo-img">
+                </a>
             </div>
             <!-- Navbar -->
             <ul class="nav-left">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
             </ul>
+            <!-- Hamburger Menu -->
+            <button type="button" class="hamburger" id="menu-btn">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </button>
         </div>
     </nav>
-
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+        <div class="mobile-menu-bottom">
+            <button class="btn">Option1</button>
+            <button class="btn btn-black">Option2</button>
+            <div>
+                <a href="#">
+                    <image src="./images/main-lg.jpg" alt="main" class="logo-img">
+                </a>
+            </div>
+        </div>
+    </div>
     <div>
         <p class="header-desc">This is going to be about breaking into tech as an aspiring software developer</p>
     </div>
@@ -72,8 +108,8 @@
             <a href="#" target="_blank" class="third-btn">Third anchor</a>
         </div>
     </section>
-
-    <footer>
+    <div class="divider"></div>
+    <footer class="footer">
         <p>&copy; My head is spinning </p>
     </footer>
 </body>
